@@ -98,3 +98,7 @@ tr:nth-child(odd) {background-color: white;}
   animation-name: example;
   animation-direction: alternate;
 }
+
+.screen_only{
+  display: none;
+}
