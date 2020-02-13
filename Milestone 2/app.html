@@ -3,61 +3,42 @@
 <head>
   <title>CUS 1172 | Chris Polloni</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="computer.css">
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="computer.css">
+  <link rel="stylesheet" media="screen and (max-width: 899px)" href="phone.css">
 </head>
 <body>
 
-  <ul class="menu">
-    <li>
+  <div class="navbar">
       <a href="#profile_anchor"><div>Profile</div></a>
-    </li>
-    <li>
       <a href="#education_anchor"><div>Education</div></a>
-    </li>
-    <li>
       <a href="#experience_anchor"><div>Experience</div></a>
-    </li>
-    <li>
       <a href="#programming_skills_anchor"><div>Programming Skills</div></a>
-    </li>
-    <li>
       <a href="#interests_anchor"><div>Interests</div></a>
-    </li>
-    <li>
       <a href="#favorites_anchor"><div>Favorites</div></a>
-    </li>
-    <li>
       <a href="#favorite_websites_anchor"><div>Favorite Websites</div></a>
-    </li>
-    <li>
       <a href="#projects_anchor"><div>Projects</div></a>
-    </li>
-    <li>
       <a href="#poll_anchor"><div>Poll</div></a>
-    </li>
-  </ul>
+  </div>
 
-
-
-  <div class="main">
-    <div class="hero-image" style="height: 200px;">
+    <div class="hero-image">
       <div class="hero-text">
         <h1 style="font-size:50px">CUS 1172</h1>
       </div>
     </div>
 
     <div class="row">
-      <div class="col-6">
+    <div class="main_left">
         <div id="profile_anchor">
-          <h1><span style="color:blue"><div class="animation">Christopher Polloni<div><span></h1>
-            <img src="forky.jpg" alt="Forky Profile Image"><br>
+          <h1><span style="color:blue">Christopher Polloni<span></h1>
+            <img id="profile_image" src="forky.jpg" alt="Forky Profile Image"><br>
             <b>School:</b> St. John's University<br>
             <b>Major:</b> Computer Science<br>
             <b>Concentration:</b> Business Administration<br>
             <b>Year of Study:</b> Senior
           </div><br>
         </div>
-        <div class="col-6">
+
+        <div class="main_right">
           <div id="education_anchor">
             <h1>Education</h1>
             <p>I am currently a senior at St. John's University. Coming into St. John's I was undecided on what major I would pursue.
@@ -73,8 +54,9 @@
         </div>
 
 
+
         <div class="row">
-          <div class="col-6">
+        <div class="main_left">
             <div id="experience_anchor">
               <h1>Experience</h1>
               <h3>TotalCollab - Software Engineering Course</h3>
@@ -85,7 +67,7 @@
               </div><br>
             </div>
 
-            <div class="col-6">
+            <div class="main_right">
               <div id="programming_skills_anchor">
                 <h1>Programming Skills</h1>
                 <table align="center">
@@ -129,32 +111,41 @@
           </div>
 
           <div id="favorites_anchor">
+            <div class="row">
+            <div class="main_full">
             <h1>Favorites<h1>
-              <div class="row">
-                <div class="col-6">
-                  <h3>TV Show: Friends</h3>
-                  <iframe src="https://www.youtube.com/embed/hT-8Yz1JsdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                <div class="col-6">
-                  <h3>Film: Toy Story 4</h3>
-                  <iframe src="https://www.youtube.com/embed/wmiIUN-7qhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-3">
-                </div>
-                <div class="col-6">
-                  <h3>Song: Unknown by The Minions</h3>
-                  <iframe src="https://www.youtube.com/embed/Rtk9n7OkpEY?start=65" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div><br>
-              <div class="col-3">
-              </div>
             </div>
           </div>
 
+          <div class="row">
+              <div class="main_left">
+                  <h3>TV Show: Friends</h3>
+                  <div align="center">
+                  <iframe src="https://www.youtube.com/embed/hT-8Yz1JsdQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="middle"></iframe>
+                </div>
+                </div>
+                <div class="main_right">
+                  <h3>Film: Toy Story 4</h3>
+                  <div align="center">
+                  <iframe src="https://www.youtube.com/embed/wmiIUN-7qhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="main_full">
+                  <h3>Song: Unknown by The Minions</h3>
+                  <div align="center">
+                  <iframe src="https://www.youtube.com/embed/Rtk9n7OkpEY?start=65" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                </div><br>
+              </div>
+            </div>
+
             <div class="row">
-              <div class="col-6">
+              <div class="main_left">
                 <div id="interests_anchor">
                   <h1>Interests</h1>
                   Some of my interests include:
@@ -166,7 +157,7 @@
                 </div>
               </div>
 
-              <div class="col-6">
+              <div class="main_right">
                 <div id="favorite_websites_anchor">
                   <h1>Favorite Websites</h1>
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQd_k8jZInUIE8m4nRAgCyT8bLE-TEf2QW9mHjkkBnDHOCMSuGv" alt="Amazon Logo" width="300"><br>
@@ -181,7 +172,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-12">
+                  <div class="main_full">
                 <div id="projects_anchor">
                   <h1>CUS 1172 Projects</h1>
                   <ol>
@@ -216,17 +207,18 @@
                   </ol>
                 </div>
 
-
+                <div class="screen_only">
                 <div id="poll_anchor">
                   <h1>Poll</h1>
                   Which of my projects do you like the most?<br>
                   <form>
                     <input type="radio" name="project" value="milestone1"> Milestone 1<br>
                     <input type="radio" name="project" value="milestone2"> Milestone 2<br>
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" style="color:white; background-color: green;">
                   </form>
                 </div><br><br>
               </div>
+            </div>
             </div>
               </div>
             </body>
