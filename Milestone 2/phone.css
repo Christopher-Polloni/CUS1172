@@ -48,23 +48,22 @@ body{
   color: black;
 }
 
-/* Column container */
 .row {
   display: flex;
   flex-wrap: wrap;
 }
 
-
-/* Main column */
 .main_left, .main_right{
   flex: 50%;
   background-color: #f2dd96;
   padding: 20px;
+  border-style: solid;
 }
 .main_full{
   flex: 100%;
   background-color: #f2dd96;
   padding: 20px;
+  border-style: solid;
 }
 
 #profile_image{
@@ -88,3 +87,7 @@ table, th, td {
 }
 tr:nth-child(even) {background-color: lightgrey;}
 tr:nth-child(odd) {background-color: white;}
+
+.delete-whitespace{
+  flex-direction: row;
+}
