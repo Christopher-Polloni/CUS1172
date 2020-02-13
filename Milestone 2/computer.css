@@ -99,8 +99,7 @@ tr:nth-child(odd) {background-color: white;}
   animation-direction: alternate;
 }
 
-@keyframes example {
-  from <img class="bottom" src="/images/Windows%20Logo.jpg" />
-  <img class="top" src="/images/Turtle.jpg" />
-  to {background-color: yellow;}
-}
+@media print{
+  .screen_only{
+    display:none;}
+  }
